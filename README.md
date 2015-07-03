@@ -19,6 +19,7 @@ second), then a `longclick` event will be fired.
 ```javascript
 $("#delete-button").longclick({
   holdText: "Hold to delete...",  // default: "Hold..."
+  heldText: "Deleting...",        // default: null (will revert back to original text)
   duration: 1000                  // default: 1000
 }).on("longclick", function() {
   // do something
